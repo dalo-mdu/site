@@ -1,0 +1,153 @@
+.fc, .fr { display:flex; }
+.fc { flex-direction:column; }
+.fr { flex-direction:row; }
+.fw { flex-wrap:wrap; }
+.f1 { flex:1; }
+.f2 { flex:2; }
+.f3 { flex:3; }
+.jc-center { justify-content:center; }
+.ai-center { align-items:center; }
+.as-center { align-self:center; }
+.jc-stretch { justify-content:stretch; }
+.ai-stretch { align-items:stretch; }
+.as-stretch { align-self:stretch; }
+.g8 { gap:8px; }
+
+@font-face {
+	font-family: "FiraCode";
+	src: url("/assets/FiraCode-VariableFont_wght.ttf");
+}
+@font-face {
+	font-family: "FiraCode NerdFont";
+	src: url("/assets/Fira Code Regular Nerd Font Complete Mono.otf");
+}
+
+body {
+	margin:0;
+	height:100%;
+	width:100%;
+	font-family:"FiraCode";
+	font-size:1.5rem;
+	overflow:hidden auto;
+}
+* {
+	box-sizing:border-box;
+}
+:focus-visible {
+	outline:solid var(--accent) 2px;
+}
+
+:root {
+	--accent:#f4d522;
+	background-color:var(--bg);
+	color:var(--fg);
+}
+/*\
+|*| Light theme
+|*| https://github.com/microsoft/vscode/blob/main/extensions/theme-solarized-light/themes/solarized-light-color-theme.json
+\*/
+:root {
+	--fg: #272822;
+	--bg: #FDF6E3; /* editor.background */
+	--bg2:#DDD6C1; /* tab.border */
+}
+/*\
+|*| Dark theme
+|*| https://github.com/microsoft/vscode/blob/main/extensions/theme-monokai/themes/monokai-color-theme.json
+\*/
+@media (prefers-color-scheme: dark) {
+	:root {
+		--fg: #F8F8F2; /* editor.foreground */
+		--bg: #272822; /* editor.background */
+		--bg2:#1E1F1C; /* tab.border */
+	}
+}
+
+/*\
+|*| Navigation bar
+\*/
+header {
+	background:var(--bg2);
+	height:3em;
+	flex-shrink:0;
+}
+nav {
+	background:var(--bg2);
+	overflow-x:auto;
+	padding:0 .5em;
+}
+nav a {
+	padding:.25em .75em;
+	border-radius:calc(1.25em);
+	white-space:nowrap;
+	text-decoration:none;
+}
+nav a:hover, nav a:focus, nav a.active {
+	background:var(--bg)
+}
+nav #logo {
+	padding:.25em;
+	border-radius:0;
+	display:flex;
+}
+nav #logo img {
+	height:2.5em;
+}
+
+/*\
+|*| Footer
+\*/
+footer {
+	flex-shrink:0;
+	overflow:auto;
+	padding:.5em;
+}
+footer a {
+	font-family:"FiraCode NerdFont";
+	background:var(--bg2);
+	padding:.25em .75em;
+	border-radius:calc(1.25em);
+	white-space:nowrap;
+	text-decoration:none;
+}
+
+/*\
+|*| Main
+\*/
+main {
+	width:100%;
+	max-width:100rem;
+	margin:0 auto;
+	padding:0.5em;
+	overflow-x:auto;
+}
+
+/* import url("./typography.css"); */
+h1 {
+	font-size: 3.25em;
+	font-weight: 400;
+	margin: .75em;
+}
+
+h2 {
+	font-size: 2.25em;
+	font-weight: 350;
+}
+
+h3 {
+	font-size: 1.25em;
+	font-weight: 300;
+}
+
+p {
+	font-weight: 200;
+	line-height: 1.3;
+}
+
+a {
+	color: inherit;
+}
+
+strong {
+	font-weight: 600;
+}
