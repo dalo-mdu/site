@@ -6,6 +6,9 @@
 ![logo](/assets/logo_512.png){: style="width:16rem;" }
 
 ## Välkommen till Datalogi Föreningen
+</section>
+
+<section class="fc">
 Här pluggar framtidens dataloger och annat schysst folk på Mälardalens Högskola.
 
 Vi samlar studenter som läser det datavetenskapliga programmet, högskoleingenjör i nätverksteknik och masterprogrammet i intelligenta inbyggda system. Vi representerar dessa mot skolan och inom Mälardalens Studentkår. Vi arrangerar lite festligheter. Vi håller i en pluggstuga för att hjälpa till med studierna. Vi arrangerar datalogidagen som är en arbetsmarknadsmässa.
