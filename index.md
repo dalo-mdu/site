@@ -27,5 +27,6 @@ De vinnande märkena kommer att finnas till försäljning vid årsmötet i febru
 
 <section class="fc">
 ## Datalogidagen 2022
+
 Vi höll vår årliga arbetsmarknadsmässa den första december och vi hade [Congere](https://www.congere.se/), [HiQ](https://hiq.se/), [Talent Bureau](https://www.talentbureau.se/), [Prevas](https://www.prevas.se/), [Westermo](https://www.westermo.com/), [1080motion](https://1080motion.com/) och [Skatteverket](https://skatteverket.se/) på besök.
 </section>
