@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM nginx:latest
 
 
 ENV NGINX_VERSION   %%NGINX_VERSION%%
