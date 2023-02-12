@@ -1,32 +1,52 @@
-- role:  Kapten, Näringslivsutskottet
-  fname: Josefin
-  nick:  Glömsk
-  lname: Örling
+- role:  Kapten
+  fname: Gustav
+  nick:  ELIT
+  lname: Kånåhols
 - role:  Vice ordförande
   fname: Fredrik
   nick:  Hemköp
   lname: Nygårds
-- role:  Sekreterare, Utbildningsutskottet
-  fname: Gustav
-  nick:  Elit
-  lname: Kånåhols
+- role:  Sekreterare
+  fname: Johan
+  nick:  Nisse
+  lname: Sandred
 - role:  Kassör
-  fname: Casper
-  nick:  Ratman
-  lname: Norén
-- role:  Materialansvarig, Phestutskottet
+  fname: Martin
+  nick:  Fruit Ninja
+  lname: Sandred
+- role:  Materialansvarig
   fname: Eric
   nick:  Huntly
   lname: Masser
 - role:  Ledamot
+  fname: Robin
+  nick:  Mäster Sprut
+  lname: Fransson
+- role:  Ledamot
+  fname: Eric
+  nick:  Disco
+  lname: Isaksson
+- role:  Ledamot
+  fname: Victor
+  nick:  "2,5"
+  lname: Herlin
+- role:  Suppleant
   fname: Jonas
   nick:  Kite
   lname: Sjöstrom
-- role:  Ledamot
-  fname: Almin
-  nick:  My
-  lname: Alibesic
-- role:  Ledamot
-  fname: Martin
-  nick:  Fruit Ninja
-  lname: Söderman
+- role:  Suppleant
+  fname: Oskar
+  nick:  Pippi
+  lname: Sturebrand
+- role: Suppleant
+  fname: Ivan
+  nick: Grodan
+  lname: Hansson
+- role: Suppleant
+  fname: Patrick
+  nick: Void
+  lname: Sjöö
+- role: Suppleant
+  fname: Mika
+  nick: Stockholm
+  lname: Pärssinen
