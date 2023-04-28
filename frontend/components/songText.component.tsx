@@ -15,7 +15,7 @@ interface SongTextProps {
 
 export default function SongText({ song }: SongTextProps) {
     return (
-        <div className=" p-4  bg-white dark:bg-neutral-900  shadow-2xl rounded-lg border-yellow-300/10 border-2 w-full" id={song.title}>
+        <div className=" p-4  scroll-m-32 bg-white dark:bg-neutral-900  shadow-2xl rounded-lg border-yellow-300/10 border-2 w-full" id={song.title}>
             <h1 className="text-3xl mb-4">{song.title}</h1>
             {song.melody && <h2 className="text-sm font-bold">{song.melody}</h2>}
             {song.writer && <h3 className="text-xs">{song.writer}</h3>}
