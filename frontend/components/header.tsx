@@ -7,7 +7,7 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
         <div className="fixed top-0 left-0 w-screen px-10 pt-8">
-            <nav className={` bg-white/50  dark:bg-black/50 px-16 rounded-[2rem] border-yellow-500/30 border shadow-yellow-700/5 shadow-lg backdrop-blur-lg justify-between transition-all duration-500 ease-in-out ${isMenuOpen ? "h-96 lg:h-16" : "h-16" }`}>
+            <nav className={` bg-white/50  dark:bg-black/50 md:px-16 px-6 rounded-[2rem] border-yellow-500/30 border shadow-yellow-700/5 shadow-lg backdrop-blur-lg justify-between transition-all duration-500 ease-in-out ${isMenuOpen ? "h-96 lg:h-16" : "h-16" }`}>
                 <div className="h-16 w-full flex items-center">
                 <div className='flex flex-1 gap-8'>
                         <Link onClick={() => setIsMenuOpen(false)} href={'/'}>

@@ -24,11 +24,10 @@ const mockEvents: Event[] = [
 
 export default function Home() {
   return (
-    <div className=" h-full min-h-full flex-1     flex flex-col">
-      <div className="grid grid-cols-1 lg:grid-cols-2 h-full min-h-full flex-1">
-        <div className='w-full h-full min-h-full flex justify-center items-center flex-col'>
-          <Image src="/logo_512.png" className='lg:w-1/3 w-1/2 mb-4' width={512} height={512} alt={''} />
-          <div className='2xl:w-1/2 '>
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-full lg:min-h-full lg:flex-1">
+        <div className='w-full lg:min-h-full flex  items-center flex-col mb-10 lg:mb-0'>
+          <Image src="/logo_512.png" className='lg:w-1/3 w-1/2 mb-4 aspect-square' width={512} height={512} alt={''} />
+          <div className='2xl:w-1/2'>
             <h1 className="font-medium flex items-center text-5xl mb-4">
               Dalo
             </h1>
@@ -52,7 +51,6 @@ export default function Home() {
               })
             }
           </div>
-      </div>
       </div>
       </div>
   )
