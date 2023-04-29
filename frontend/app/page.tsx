@@ -1,28 +1,18 @@
-import EventPreview, { Event } from '@/components/event.component'
+import EventPreview from '@/components/event.component'
+import client from '@/graphql/client';
+import { LIST_EVENT } from '@/graphql/queries';
+import { IEventAttributes, IEventInfo } from '@/types/types';
 import Image from 'next/image'
 import Link from 'next/link'
 
-const mockEvents: Event[] = [
-  {
-    title: 'Grillning',
-    text: 'Hamburar och korv',
-    date: '2021-09-01',
-    time: '12:00',
-    location: 'Parkeringsplatsen',
-
-  },
-  {
-    title: 'Fake Event 1',
-    text: 'Fake Event Text 1',
-    date: '2021-09-04',
-    time: '12:00',
-    location: 'MDU'
-  }
-]
 
 
 
-export default function Home() {
+
+export default async function Home() {
+  const { data } = await client.query({ query: LIST_EVENT })
+  const events: IEventAttributes[] = data.events.data;
+
   return (
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-full lg:min-h-full lg:flex-1">
         <div className='w-full lg:min-h-full lg:h-full lg:flex-1 flex lg:justify-center items-center flex-col mb-10 lg:mb-0'>
@@ -46,7 +36,7 @@ export default function Home() {
           </h2>
           <div className="flex flex-col gap-2 w-full 2xl:w-1/2 mx-auto  p-4 items-center  rounded-lg pt-10">
             {
-              mockEvents.map((event, index) => {
+            events.slice(0,3).map((event, index) => {
                 return <EventPreview key={index} event={event} />
               })
             }

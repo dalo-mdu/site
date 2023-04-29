@@ -1,8 +1,7 @@
-import { StyrelseMember } from "@/app/styr/page";
-import Link from "next/link";
+import {  IBoardFields } from "@/types/types";
 
 interface StyrcardProps {
-    info: StyrelseMember;
+    info: IBoardFields;
 }
 
 

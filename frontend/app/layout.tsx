@@ -2,6 +2,8 @@ import Header from '@/components/header'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Footer from '@/components/footer'
+import client from '@/graphql/client'
+import { GET_FOOTER } from '@/graphql/queries'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,11 +12,13 @@ export const metadata = {
   description: 'Datalogerna på MDU',
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
-}) {
+  }) {
+  const { data } = await client.query({ query: GET_FOOTER })
+  const FooterItems: any[] = data.footer.data.attributes.items;
   return (
     <html lang="en">
       <body className="dark:bg-neutral-950 dark:text-white bg-yellow-50 text-neutral-950 " >
@@ -23,7 +27,7 @@ export default function RootLayout({
           {children}
         </main>
 
-          <Footer />
+          <Footer items={FooterItems} />
 
       </body>
       

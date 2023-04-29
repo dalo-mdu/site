@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_common_events",
+  "info": {
+    "displayName": "Event"
+  },
+  "options": {},
+  "attributes": {
+    "info": {
+      "type": "richtext",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "organizer": {
+      "type": "string"
+    },
+    "shortinfo": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "datetime",
+      "required": true
+    },
+    "cost": {
+      "type": "decimal"
+    },
+    "endDate": {
+      "type": "datetime"
+    }
+  }
+}

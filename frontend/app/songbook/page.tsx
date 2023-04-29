@@ -1,13 +1,12 @@
-import SongText, { Song } from '@/components/songText.component'
+import SongText from '@/components/songText.component'
+import client from '@/graphql/client';
+import { LIST_SONG } from '@/graphql/queries';
+import { ISongAttributes } from '@/types/types';
 
 
 
-const Songs: Song[] = [
-    {
-        title: "Nationalsången",
-        melody: "Melodi: Du gamla, Du fria",
-        text: "Du gamla, Du fria, Du fjällhöga nord\n\nDu tysta, Du glädjerika sköna!\n\nJag hälsar Dig, vänaste land uppå jord,\n\n𝄆 Din sol, Din himmel, Dina ängder gröna. 𝄇Du tronar på minnen från fornstora da'r,\n\ndå ärat Ditt namn flög över jorden.\n\nJag vet att Du är och Du blir vad Du var.\n\n𝄆 Ja, jag vill leva jag vill dö i Norden. 𝄇"
-    },
+const StaticSongs = [
+
     {
         title: "Rida get",
         text: "DALOs “föreningslåt”Riida Rida Get\n\nEn glad analfabet\n\nLeeva Leva Liivet\n\nUte på Savannen!"
@@ -119,7 +118,10 @@ const Songs: Song[] = [
         text: "10 LET oss nu fatta i våra glas\n\n20 INPUT en klunk utav det som där has\n\n30 IF du fått nog THEN till 50 min vän\n\n40 ELSE GOTO-baka till 10 igen\n\n50 END"
     }
 ]
-export default function Songbook() {
+export default async function Songbook() {
+    const { data } = await client.query({ query: LIST_SONG })
+    const Songs: ISongAttributes[] = data.songs.data;
+    
     return (
         <div >
      
@@ -128,13 +130,13 @@ export default function Songbook() {
                     <div className='flex md:gap-4 gap-2 flex-wrap justify-center'>
                         {Songs.map((song) => {
                             return (
-                                <a className='py-2 px-4 md:px-8 dark:bg-neutral-900 text-sm md:text-lg bg-white/50 rounded-full border-yellow-500/10 border-2 ' href={`#${song.title}`} key={song.title}>{song.title}</a>
+                                <a className='py-2 px-4 md:px-8 dark:bg-neutral-900 text-sm md:text-lg bg-white/50 rounded-full border-yellow-500/10 border-2 ' href={`#${song.attributes.SongInfo.name}`} key={song.attributes.SongInfo.name}>{song.attributes.SongInfo.name}</a>
                             )
                         })}
                     </div>
                     {Songs.map((song) => {
                         return (
-                            <SongText song={song} key={song.title}  />
+                            <SongText song={song.attributes.SongInfo} key={song.attributes.SongInfo.name}  />
                         )
                     })}
                 </div>
