@@ -30,7 +30,7 @@ export default async function Home() {
             Läs Mer
           </Link>
         </div>
-        <div className='self-center' >
+        <div className='self-center flex flex-col items-center' >
           <h2 className='text-3xl'>
             Kommande Evenemang
           </h2>
