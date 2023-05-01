@@ -1,6 +1,6 @@
 export default function New() {
     return (
-        <main className="max-w-2xl mx-auto mt-10">
+        <main className="max-w-2xl mx-auto mt-10 w-full">
             <h1 className="text-5xl mb-6">
                 Ny Student
             </h1>
@@ -12,3 +12,4 @@ export default function New() {
             </div>
         </main>)
 }
+export const revalidate = 60; 

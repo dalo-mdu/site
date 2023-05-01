@@ -1,7 +1,7 @@
 import {ApolloClient, InMemoryCache, NormalizedCacheObject} from "@apollo/client";
 
 const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
-    uri: process.env.STRAPI_ADDRESS,
+    uri: "https://dalo.axeldraws.com/graphql",
     cache: new InMemoryCache(),
 });
 
