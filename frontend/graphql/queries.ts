@@ -22,7 +22,7 @@ export const LIST_EVENT = gql(`query {
 }`)
 
 export const LIST_SONG = gql(`query {
-    songs {
+    songs (pagination: { limit: 100 }) {
         data {
             id
             attributes {
@@ -39,7 +39,7 @@ export const LIST_SONG = gql(`query {
     }
 }`)
 export const LIST_BOARD = gql(`query {
-    boardMembers{
+    boardMembers (pagination: { limit: 100 }){
         data {
             id
             attributes {
