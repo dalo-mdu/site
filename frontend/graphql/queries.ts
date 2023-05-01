@@ -1,6 +1,39 @@
 import { gql } from "@apollo/client"
 
 
+export const LIST_EXAMS = gql(`query {
+  exams {
+    data {
+      id
+      attributes {
+        course {
+          data {
+            attributes {
+              name
+              code
+            }
+          }
+        }
+        exam {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+        solution {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+        examDate
+      }
+    }
+  }
+}`)
+
 export const LIST_EVENT = gql(`query {
   events {
     data {
