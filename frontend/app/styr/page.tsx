@@ -100,7 +100,7 @@ export default async function Styrelse() {
 
 
     return (
-        <main className="max-w-6xl mx-auto mt-10">
+        <main className="max-w-6xl w-full mx-auto mt-10">
             <h1 className="text-5xl mb-6">
                 DALOs Styrelse
             </h1>

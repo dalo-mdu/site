@@ -9,7 +9,7 @@ export default async function About() {
     
 
     return (
-        <main className="max-w-2xl mx-auto mt-10">
+        <main className="max-w-2xl mx-auto mt-10 w-full">
             <h1 className="text-5xl mb-6">
                 Om Dalo
             </h1>
