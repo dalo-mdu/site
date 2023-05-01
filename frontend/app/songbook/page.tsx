@@ -22,7 +22,6 @@ export default function Songbook() {
     const [Songs,setSongs] = useState<ISongAttributes[]>([])
     const [showScroll, setShowScroll] = useState<boolean>(false)
     const checkScrollTop = () => {
-        console.log(window.scrollY)
         if (window.scrollY > 100) {
             setShowScroll(true)
         } else if (window.scrollY <= 100) {
