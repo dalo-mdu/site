@@ -47,6 +47,20 @@ export default async function Event({ params }: { params: { id: string } }) {
                             </>
                         </p>
                     )}
+                    {event?.attributes.info?.endDate && (<p className="my-0.5 font-bold">Till</p>)}
+                     {event?.attributes.info?.endDate && (
+                        <p className="mt-1 mb-1">
+                            <>
+                                
+                                {new Date(event?.attributes.info?.endDate).toLocaleDateString("sv-SE", {
+                                    weekday: "long",
+                                    month: "long",
+                                    day: "numeric",
+                                })
+                                }
+                            </>
+                        </p>
+                    )}
                     {event?.attributes.info?.endDate && (
                         <p className="mt-1 mb-1">
                             <>
