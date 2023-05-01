@@ -75,3 +75,4 @@ export default async function Event({ params }: { params: { id: string } }) {
           
         </main>)
 }
+export const revalidate = 60; 

@@ -12,3 +12,4 @@ export default function New() {
             </div>
         </main>)
 }
+export const revalidate = 60; 

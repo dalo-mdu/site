@@ -18,3 +18,4 @@ export default async function About() {
             </ReactMarkdown>
         </main>)
 }
+export const revalidate = 60; 
