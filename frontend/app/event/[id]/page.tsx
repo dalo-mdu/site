@@ -12,7 +12,7 @@ export default async function Event({ params }: { params: { id: string } }) {
 
 
     return (
-        <main className="max-w-6xl flex lg:flex-row flex-col mx-auto mt-10 prose prose-invert w-full">
+        <main className="max-w-6xl flex lg:flex-row flex-col mx-auto mt-10 prose dark:prose-invert w-full">
             <div className="flex-1"><h1>
                 {event?.attributes.info.name}
             </h1>
