@@ -21,6 +21,10 @@ export default async function RootLayout({
   const FooterItems: any[] = data.footer.data.attributes.items;
   return (
     <html lang="en">
+      <head>
+        {/*favicon*/}
+        <link rel="icon" href="/uploads/favicon.ico" />
+        </head>
       <body className="dark:bg-neutral-950 dark:text-white bg-yellow-50 text-neutral-950 " >
         <main className=" p-10 md:p-24 md:pt-32 pt-32  min-h-screen h-full flex flex-col">
         <Header/>
