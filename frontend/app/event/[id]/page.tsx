@@ -12,7 +12,7 @@ export default async function Event({ params }: { params: { id: string } }) {
 
 
     return (
-        <main className="max-w-6xl flex lg:flex-row flex-col mx-auto mt-10 prose dark:prose-invert w-full">
+        <main className="max-w-6xl flex lg:flex-row flex-col mx-auto mt-10 prose dark:prose-invert w-full gap-4">
             <div className="flex-1"><h1>
                 {event?.attributes.info.name}
             </h1>
@@ -22,7 +22,7 @@ export default async function Event({ params }: { params: { id: string } }) {
                 </ReactMarkdown>
             </div>
             <div>
-                <div className="shadow-md rounded-md flex flex-col w-full lg:w-72 px-4 py-6 prose bg-white dark:bg-black  dark:border dark:border-white dark:prose-invert ">
+                <div className="shadow-md rounded-md flex flex-col w-full lg:w-72 px-4 py-6 prose bg-white dark:bg-neutral-900  border-yellow-500/10 dark:border-2   dark:prose-invert ">
                     <h3>Info</h3>
                     {event?.attributes.info?.date && (
                         <p className="mt-1 mb-1">

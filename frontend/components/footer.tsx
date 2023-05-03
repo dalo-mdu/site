@@ -1,5 +1,3 @@
-import client from "@/graphql/client";
-import { GET_FOOTER } from "@/graphql/queries";
 import Link from "next/link";
 
 
@@ -16,10 +14,11 @@ export default function Footer(
                     {
                         items.map((item, index) => {
                             return (
-                                <div key={index} className="flex flex-col  justify-center gap-4 py-8">
+                                <div key={index} className={`flex flex-col justify-center gap-4 py-8`}>
                                     <h2 className="font-extrabold">
                                         {item.title}
                                     </h2>
+                                    <div className="grid grid-cols-2 gap-2">
                                     {
                                         item.items.map((subitem:any) => {
                                             return (
@@ -28,7 +27,8 @@ export default function Footer(
                                                 </Link>
                                             )
                                         })
-                                    }
+                                        }
+                                    </div>
                                 </div>
                             )
 

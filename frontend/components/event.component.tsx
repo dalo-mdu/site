@@ -8,7 +8,7 @@ interface EventProps {
 
 export default function EventPreview({ event }: EventProps) {
     return (
-        <Link href={`/event/${event.attributes.info.name}`} className="flex gap-2 w-full dark:bg-neutral-900 bg-white/50 p-8 items-center  rounded-lg justify-between ">
+        <Link href={`/event/${event.attributes.info.name}`} className="flex gap-2 w-full dark:bg-neutral-900  border-yellow-500/10 dark:border-2   bg-white/50 p-8 items-center  rounded-lg justify-between ">
             <div>
                 <h2 className="font-extrabold flex gap-2 items-center">
                     {event.attributes.info.name}
