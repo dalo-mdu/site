@@ -13,78 +13,87 @@ export default async function Event({ params }: { params: { id: string } }) {
 
     return (
         <main className="max-w-6xl flex lg:flex-row flex-col mx-auto mt-10 prose dark:prose-invert w-full gap-4">
-            <div className="flex-1"><h1>
+            <div>
+            <h1>
                 {event?.attributes.info.name}
-            </h1>
+                </h1>
+                <div className="lg:flex-row flex flex-col-reverse">
+                 
+               
 
+
+                <div className="flex-1">
             <ReactMarkdown>
                 {event?.attributes.info.info ?? ""}
                 </ReactMarkdown>
-            </div>
-            <div>
-                <div className="shadow-md rounded-md flex flex-col w-full lg:w-72 px-4 py-6 prose bg-white dark:bg-neutral-900  border-yellow-500/10 dark:border-2   dark:prose-invert ">
-                    <h3>Info</h3>
-                    {event?.attributes.info?.date && (
-                        <p className="mt-1 mb-1">
-                            <>
-                                
-                                {new Date(event?.attributes.info?.date).toLocaleDateString("sv-SE", {
-                                    weekday: "long",
-                                    month: "long",
-                                    day: "numeric",
-                                })
-                                }
-                            </>
-                        </p>
-                    )}
-                    {event?.attributes.info?.date && (
-                        <p className="mt-1 mb-1">
-                            <>
-                                {new Date(event?.attributes.info?.date).toLocaleTimeString("sv-SE", {
-                                    hour: "2-digit",
-                                    minute: "2-digit",
-                                })}
-                            </>
-                        </p>
-                    )}
-                    {event?.attributes.info?.endDate && (<p className="my-0.5 font-bold">Till</p>)}
-                     {event?.attributes.info?.endDate && (
-                        <p className="mt-1 mb-1">
-                            <>
-                                
-                                {new Date(event?.attributes.info?.endDate).toLocaleDateString("sv-SE", {
-                                    weekday: "long",
-                                    month: "long",
-                                    day: "numeric",
-                                })
-                                }
-                            </>
-                        </p>
-                    )}
-                    {event?.attributes.info?.endDate && (
-                        <p className="mt-1 mb-1">
-                            <>
-                                {new Date(event?.attributes.info?.endDate).toLocaleTimeString("sv-SE", {
-                                    hour: "2-digit",
-                                    minute: "2-digit",
-                                })}
-                            </>
-                        </p>
-                    )}
-                    {event?.attributes.info?.location ??
-                        (
-                        <p className="mt-2 mb-2">
-                            {event?.attributes.info?.location}
-                        </p>
-                    )}
+                    </div>
+                    <div>
+                    <div className="shadow-md rounded-md flex flex-col w-full lg:w-72 px-4 py-6 prose bg-white dark:bg-neutral-900  border-yellow-500/10 dark:border-2   dark:prose-invert ">
+                        <h3>Info</h3>
+                        {event?.attributes.info?.date && (
+                            <p className="mt-1 mb-1">
+                                <>
 
-                    {event?.attributes.info?.cost && (
-                        <p className="mt-2 mb-2">
-                            Cost: <span className="font-bold">{event?.attributes.info?.cost}</span> kr
-                        </p>
-                    )}
-                
+                                    {new Date(event?.attributes.info?.date).toLocaleDateString("sv-SE", {
+                                        weekday: "long",
+                                        month: "long",
+                                        day: "numeric",
+                                    })
+                                    }
+                                </>
+                            </p>
+                        )}
+                        {event?.attributes.info?.date && (
+                            <p className="mt-1 mb-1">
+                                <>
+                                    {new Date(event?.attributes.info?.date).toLocaleTimeString("sv-SE", {
+                                        hour: "2-digit",
+                                        minute: "2-digit",
+                                    })}
+                                </>
+                            </p>
+                        )}
+                        {event?.attributes.info?.endDate && (<p className="my-0.5 font-bold">Till</p>)}
+                        {event?.attributes.info?.endDate && (
+                            <p className="mt-1 mb-1">
+                                <>
+
+                                    {new Date(event?.attributes.info?.endDate).toLocaleDateString("sv-SE", {
+                                        weekday: "long",
+                                        month: "long",
+                                        day: "numeric",
+                                    })
+                                    }
+                                </>
+                            </p>
+                        )}
+                        {event?.attributes.info?.endDate && (
+                            <p className="mt-1 mb-1">
+                                <>
+                                    {new Date(event?.attributes.info?.endDate).toLocaleTimeString("sv-SE", {
+                                        hour: "2-digit",
+                                        minute: "2-digit",
+                                    })}
+                                </>
+                            </p>
+                        )}
+                        {event?.attributes.info?.location ??
+                            (
+                                <p className="mt-2 mb-2">
+                                    {event?.attributes.info?.location}
+                                </p>
+                            )}
+
+                        {event?.attributes.info?.cost && (
+                            <p className="mt-2 mb-2">
+                                Cost: <span className="font-bold">{event?.attributes.info?.cost}</span> kr
+                            </p>
+                        )}
+
+                        </div>
+                    </div>
                 </div>
+           
             </div>
           
         </main>)
