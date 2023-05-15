@@ -28,6 +28,7 @@ export default function Songbook() {
 
     return (
         <div className='flex justify-center mt-20 h-full flex-1'>
+            <div>
         <form className='ring-yellow-500' onSubmit={handleInitStep}>
             <h1 className='text-3xl font-bold mb-4'>Kontakt</h1>
 
@@ -51,6 +52,15 @@ export default function Songbook() {
                 <input className='rounded-lg bg-yellow-400 w-full py-3 mt-5 cursor-pointer text-yellow-900 hover:bg-yellow-500 shadow border-yellow-300 border transition-colors' type='submit' value='Skicka!' />
             </div>
         </form>
+        <p className='text-center my-5 text-yellow-400'>eller</p>
+        <div className='flex justify-center items-center gap-2'>
+            <a href='mailto:styr@dalo.se' className='text-neutral-700 dark:text-white'>
+               styr@dalo.se
+
+
+            </a>
+            </div>
+        </div>
         <Transition appear show={submitted} as={Fragment}>
             <Dialog as="div" className="relative z-10" onClose={setSubmitted}>
                 <Transition.Child
