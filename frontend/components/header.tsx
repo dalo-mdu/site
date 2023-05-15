@@ -23,7 +23,7 @@ export default function Header() {
     }
 
     window.addEventListener('scroll', handleScroll)
-
+    
 
     return (
         <div className={`fixed  left-0 w-screen px-10 transition-[top] duration-500 ease-in-out ${hideNavHeader ? '-top-20 md:top-8': 'top-8'}`}>

@@ -5,8 +5,8 @@ import { Fragment, useState } from 'react'
 export default function Songbook() {
 
     const [submitted, setSubmitted] = useState(false)
-
-    const handleInitStep = (e: any) => {
+    
+    const handleSubmit = (e: any) => {
 
         e.preventDefault()
         const form = e.target
@@ -15,12 +15,20 @@ export default function Songbook() {
             email: form.email.value,
             message: form.message.value
         }
+
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data),
+        })
     
         setSubmitted(true)
        
-        form.name.value = ''
-        form.email.value = ''
-        form.message.value = ''
+        // form.name.value = ''
+        // form.email.value = ''
+        // form.message.value = ''
 
         
 
@@ -29,7 +37,7 @@ export default function Songbook() {
     return (
         <div className='flex justify-center mt-20 h-full flex-1'>
             <div>
-        <form className='ring-yellow-500' onSubmit={handleInitStep}>
+        <form className='ring-yellow-500' onSubmit={handleSubmit}>
             <h1 className='text-3xl font-bold mb-4'>Kontakt</h1>
 
             <div className='flex flex-col justify-center items-center gap-2'>
