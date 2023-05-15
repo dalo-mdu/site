@@ -26,9 +26,9 @@ export default function Songbook() {
     
         setSubmitted(true)
        
-        // form.name.value = ''
-        // form.email.value = ''
-        // form.message.value = ''
+        form.name.value = ''
+        form.email.value = ''
+        form.message.value = ''
 
         
 
