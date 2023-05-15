@@ -5,9 +5,29 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [hideNavHeader, setHideNavHeader] = useState(false);
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+    const handleScroll = () => {
+        //if delta of scroll is positive, we are scrolling down
+
+        const currentScrollPos = window.pageYOffset;
+        const delta = currentScrollPos - prevScrollPos;
+        const isScrolledDown = delta > 0;
+        if(isScrolledDown && currentScrollPos > 100)
+            setHideNavHeader(true);
+        else
+            setHideNavHeader(false);
+        setPrevScrollPos(currentScrollPos);
+
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+
     return (
-        <div className="fixed top-0 left-0 w-screen px-10 pt-8">
-            <nav className={` bg-white/50  dark:bg-black/50 md:px-16 px-6 rounded-[2rem] border-yellow-500/30 border shadow-yellow-700/5 shadow-lg backdrop-blur-lg justify-between transition-all duration-500 ease-in-out ${isMenuOpen ? "h-96 lg:h-16" : "h-16" }`}>
+        <div className={`fixed  left-0 w-screen px-10 transition-[top] duration-500 ease-in-out ${hideNavHeader ? '-top-20 md:top-8': 'top-8'}`}>
+            <nav className={`bg-white/50  dark:bg-black/50 md:px-16 px-6 rounded-[2rem] border-yellow-500/30 border shadow-yellow-700/5 shadow-lg backdrop-blur-lg justify-between transition-all duration-500 ease-in-out ${isMenuOpen ? "h-96 lg:h-16" : "h-16" }`}>
                 <div className="h-16 w-full flex items-center">
                 <div className='flex flex-1 gap-8'>
                         <Link onClick={() => setIsMenuOpen(false)} href={'/'}>
