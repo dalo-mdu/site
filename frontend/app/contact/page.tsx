@@ -54,17 +54,17 @@ export default function Songbook() {
                 <div className='grid grid-cols-2 gap-2'>
                     <div className='flex flex-col '>
                         <label htmlFor='name'>Namn</label>
-                        <input required className='rounded-lg' placeholder='Förnamn' type='text' name='name' />
+                        <input required className='rounded-lg dark:text-black' placeholder='Förnamn' type='text' name='name' />
                     </div>
                     <div className='flex flex-col '>
                         <label htmlFor='surname'>Email</label>
-                        <input required className='rounded-lg' placeholder='geten@dalo.se' type='email' name='email' />
+                        <input required className='rounded-lg dark:text-black' placeholder='geten@dalo.se' type='email' name='email' />
                     </div>
 
                 </div>
                 <div className='flex flex-col w-full'>
                     <label htmlFor='message'>Meddelande</label>
-                    <textarea required className='rounded-lg' placeholder='Meddelande' name='message' />
+                    <textarea required className='rounded-lg dark:text-black' placeholder='Meddelande' name='message' />
 
                 </div>
                 <input className='rounded-lg bg-yellow-400 w-full py-3 mt-5 cursor-pointer text-yellow-900 hover:bg-yellow-500 shadow border-yellow-300 border transition-colors' type='submit' value='Skicka!' />
