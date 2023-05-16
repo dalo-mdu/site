@@ -19,7 +19,7 @@ export default async function Home() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-full lg:min-h-[30rem] lg:flex-1">
       <div className='w-full lg:min-h-full lg:h-full lg:flex-1 flex lg:justify-center items-center flex-col mb-10 lg:mb-0'>
-        <Image loading='lazy' quality={25} src="/logo_512.png" className='lg:w-1/3 w-1/2 mb-4 aspect-square' width={256} height={256} alt={''} />
+        <Image loading='lazy' quality={100} src="/logo_512.png" className='lg:w-1/3 w-1/2 mb-4 aspect-square' width={512} height={512} alt={''} />
         <div className='2xl:w-1/2'>
           <h1 className="font-medium flex items-center text-5xl ">
             Dalo
