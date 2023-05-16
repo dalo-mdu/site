@@ -15,4 +15,12 @@ export async function POST(request: Request) {
       content: `**${body.email}** \n${body.message}`})
   });
 
+  if (response.ok) {
+    return new Response('OK');
+  }
+  const restext = await response.json();
+  if(restext.content[0].includes('fewer')){
+    return new Response('To long message', { status: 400 });
+  }
+  return new Response('Error', { status: 500 });
 }

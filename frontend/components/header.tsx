@@ -1,8 +1,7 @@
 "use client"
-
 import Link from "next/link";
 import { Bars3Icon } from "@heroicons/react/24/solid";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [hideNavHeader, setHideNavHeader] = useState(false);
@@ -21,9 +20,9 @@ export default function Header() {
         setPrevScrollPos(currentScrollPos);
 
     }
-
+    useEffect(() => {
     window.addEventListener('scroll', handleScroll)
-    
+    });
 
     return (
         <div className={`fixed  left-0 w-screen px-10 transition-[top] duration-500 ease-in-out ${hideNavHeader ? '-top-20 md:top-8': 'top-8'}`}>
