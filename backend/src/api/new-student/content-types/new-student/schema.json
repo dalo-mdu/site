@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "new_students",
+  "info": {
+    "singularName": "new-student",
+    "pluralName": "new-students",
+    "displayName": "new-student"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

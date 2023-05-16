@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/uploads/:path*",
+      "destination": "https://dalo.axeldraws.com/uploads/:path*"
+    }
+  ]
+}

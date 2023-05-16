@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "footer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "items": {
+      "displayName": "FooterGroup",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.footer-group",
+      "required": true
+    }
+  }
+}

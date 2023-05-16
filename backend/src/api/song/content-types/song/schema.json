@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "songs",
+  "info": {
+    "singularName": "song",
+    "pluralName": "songs",
+    "displayName": "Song",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SongInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.song",
+      "required": true
+    }
+  }
+}

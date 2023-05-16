@@ -1,9 +1,0 @@
-collections:
-  songs:
-    sort_by: prio
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default

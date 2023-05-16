@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_common_songs",
+  "info": {
+    "displayName": "Song"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "melody": {
+      "type": "string"
+    },
+    "melodyLink": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "note": {
+      "type": "string"
+    },
+    "writer": {
+      "type": "string"
+    }
+  }
+}
