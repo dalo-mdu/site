@@ -2,6 +2,7 @@ import EventPreview from '@/components/event.component'
 import client from '@/graphql/client';
 import { LIST_EVENT } from '@/graphql/queries';
 import { IEventAttributes, IEventInfo } from '@/types/types';
+import Head from 'next/head';
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -18,6 +19,19 @@ export default async function Home() {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-full lg:min-h-[30rem] lg:flex-1">
+      <Head>
+        <title>Dalo - MDU</title>
+        <meta name="description" content="Här pluggar framtidens dataloger och annat schysst folk på Mälardalens Universitet." key="desc" />
+        <meta property="og:title" content="DALO - Mälardalens Universitet" />
+        <meta
+          property="og:description"
+          content="Här pluggar framtidens dataloger och annat schysst folk på Mälardalens Universitet."
+        />
+        <meta
+          property="og:image"
+          content="https://dalo.se/logo_512.png"
+        />
+      </Head>
       <div className='w-full lg:min-h-full lg:h-full lg:flex-1 flex lg:justify-center items-center flex-col mb-10 lg:mb-0'>
         <Image loading='lazy' quality={100} src="/logo_512.png" className='lg:w-1/3 w-1/2 mb-4 aspect-square' width={512} height={512} alt={''} />
         <div className='2xl:w-1/2'>
