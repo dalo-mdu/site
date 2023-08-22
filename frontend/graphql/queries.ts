@@ -35,7 +35,7 @@ export const LIST_EXAMS = gql(`query {
 }`)
 
 export const LIST_EVENT = gql(`query {
-  events {
+  events  (pagination: { limit: 100 }){
     data {
       id
       attributes {
