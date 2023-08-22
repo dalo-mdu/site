@@ -58,7 +58,7 @@ export default function New() {
                 <h3 className="text-2xl">Allt du behöver samlat på ett ställe</h3>
                 <p>På <a  className=" dark:text-yellow-500 text-yellow-800" href="https://hitract.se">hitract</a> hittar du Dalos medlemskap, kommunikation, events & eventsbiljetter. Du kan dessutom connecta med andra studenter på MDU och andra skolor runt om i landet.</p>
                 <h3 className="text-2xl">På hitract kan du:</h3>
-                <div className="grid grid-cols-2">
+                <div className="grid grid-cols-1 md:grid-cols-2">
                     <div className='relative w-full aspect-square'>
                         <Image className='h-full w-full    aspect-square' alt={''} loading='lazy' src="/hitract-bild-1.png" width={512} height={512} />
                         <div className='z-10 absolute flex justify-center items-center bg-black/50 h-full w-full top-0'><h2 className='text-center text-white font-medium p-2 text-2xl'>Bli kompis med andra studenter</h2></div></div>
