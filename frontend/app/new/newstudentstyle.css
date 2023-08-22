@@ -1,0 +1,23 @@
+.hitract-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+}
+
+.appstore-links {
+    display: flex;
+}
+
+ul {
+    list-style: outside;
+}
+
+ol {
+    list-style: outside;
+}
+
+@media only screen and (max-width: 768px) {
+    .hitract-grid {
+        grid-template-columns: auto auto;
+    }
+}
