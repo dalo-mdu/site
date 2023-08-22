@@ -48,6 +48,7 @@ export const LIST_EVENT = gql(`query {
           info
           cost
           endDate
+          tz
         }
       }
     }
