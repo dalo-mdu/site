@@ -34,7 +34,9 @@ export default async function Event({ params }: { params: { id: string } }) {
                             <p className="mt-1 mb-1">
                                 <>
 
-                                    {new Date(event?.attributes.info?.date).toLocaleDateString("sv-SE", {
+                                        {new Date(event?.attributes.info?.date).toLocaleDateString("sv-SE", {
+                                            timeZone: event.attributes.info.tz ?? 'Europe/Stockholm',
+
                                         weekday: "long",
                                         month: "long",
                                         day: "numeric",
@@ -46,7 +48,9 @@ export default async function Event({ params }: { params: { id: string } }) {
                         {event?.attributes.info?.date && (
                             <p className="mt-1 mb-1">
                                 <>
-                                    {new Date(event?.attributes.info?.date).toLocaleTimeString("sv-SE", {
+                                        {new Date(event?.attributes.info?.date).toLocaleTimeString("sv-SE", {
+                                            timeZone: event.attributes.info.tz ?? 'Europe/Stockholm',
+
                                         hour: "2-digit",
                                         minute: "2-digit",
                                     })}
@@ -58,7 +62,9 @@ export default async function Event({ params }: { params: { id: string } }) {
                             <p className="mt-1 mb-1">
                                 <>
 
-                                    {new Date(event?.attributes.info?.endDate).toLocaleDateString("sv-SE", {
+                                        {new Date(event?.attributes.info?.endDate).toLocaleDateString("sv-SE", {
+                                            timeZone: event.attributes.info.tz ?? 'Europe/Stockholm',
+
                                         weekday: "long",
                                         month: "long",
                                         day: "numeric",
@@ -70,7 +76,9 @@ export default async function Event({ params }: { params: { id: string } }) {
                         {event?.attributes.info?.endDate && (
                             <p className="mt-1 mb-1">
                                 <>
-                                    {new Date(event?.attributes.info?.endDate).toLocaleTimeString("sv-SE", {
+                                        {new Date(event?.attributes.info?.endDate).toLocaleTimeString("sv-SE", {
+                                            timeZone: event.attributes.info.tz ?? 'Europe/Stockholm',
+
                                         hour: "2-digit",
                                         minute: "2-digit",
                                     })}

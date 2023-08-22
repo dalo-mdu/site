@@ -24,6 +24,7 @@ export default function EventPreview({ event }: EventProps) {
                 <p className="text-gray-500">
                     {new Date(event.attributes.info.date).toLocaleDateString('sv-SE',
                         {
+                            timeZone: event.attributes.info.tz ?? 'Europe/Stockholm',
                             year: 'numeric',
                             month: 'long',
                             day: 'numeric'
@@ -32,6 +33,8 @@ export default function EventPreview({ event }: EventProps) {
                 <p>
                     {new Date(event.attributes.info.date).toLocaleTimeString('sv-SE',
                         {
+                            timeZone: event.attributes.info.tz ?? 'Europe/Stockholm',
+
                             hour: '2-digit',
                             minute: '2-digit'
                         })}
