@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import './newstudentstyle.css'
 
 export default function New() {
     return (
@@ -16,7 +15,7 @@ export default function New() {
                 <p>Dalo är studentföreningen som tar hand om rookieperioden för de tre datainriktade programmen på skolan och drivs helt ideellt av studenter från de tre programmen.</p>
                 <p>Som ny på högskolan och på rookieperioden blir det svårt att hålla koll på allt som händer.
                     Rookiecrew rekommenderar att du går med i grupperna som rekommenderades i välkomstbrevet och följer Dalo på sociala medier.</p>
-                <p>Vi organiserar saker främst med hjälp av <a style={{ color: "yellow" }} href="https://hitract.se">hitract</a>. Där går det att hitta vårt medlemskap, kommunikation och events som pågår under rookieperioden. Vår hitClub går att hitta <a style={{ color: "yellow" }} href="https://hitract.se/hitclub/1075">här</a>. <strong>Där kan ni bli en rookie-medlem i en DALO Rookie-club som vi kommer använda för att organisera rookieperioden</strong>. Mer information om vad hitract är och hur det fungerar finns <a href="#hitract" style={{ color: "yellow" }}>här</a>.</p>
+                <p>Vi organiserar saker främst med hjälp av <a  className=" dark:text-yellow-500 text-yellow-800" href="https://hitract.se">hitract</a>. Där går det att hitta vårt medlemskap, kommunikation och events som pågår under rookieperioden. Vår hitClub går att hitta <a  className=" dark:text-yellow-500 text-yellow-800" href="https://hitract.se/hitclub/1075">här</a>. <strong>Där kan ni bli en rookie-medlem i en DALO Rookie-club som vi kommer använda för att organisera rookieperioden</strong>. Mer information om vad hitract är och hur det fungerar finns <a href="#hitract" className='dark:text-yellow-500 text-yellow-800' >här</a>.</p>
 
                 <p>Med detta kommer ni enkelt kunna hitta era programkamrater, be om hjälp och vi kommer kunna informera er på ett smidigt sätt.</p>
                 <h3 className="text-2xl"><em>Rookien skall</em></h3>
@@ -41,7 +40,7 @@ export default function New() {
                 <p>Du måste klara 37HP (62.5%) för att få fortsatt CSN första året. Andra året så behöver du 45HP (75%).</p>
                 <p>Du får cirka 11 000kr varav 3 300kr är bidrag och resten är lån.
                     Beloppet kan variera beroende på om du tar tilläggslån eller har en &rdquo;hög&rdquo; inkomst.</p>
-                <p>Du kan se utbetalningsdatum på &rdquo;mina sidor&rdquo; på <a style={{ color: "yellow" }} href="http://csn.se"><strong>csn.se</strong></a></p>
+                <p>Du kan se utbetalningsdatum på &rdquo;mina sidor&rdquo; på <a  className=" dark:text-yellow-500 text-yellow-800" href="http://csn.se"><strong>csn.se</strong></a></p>
                 <p>I januari är det en större summa och i maj är det en lägre summa!</p>
                 <p>Om något problem uppstår så kan man ringa till CSN:<br />
                     Telefon: 0771-276 000<br />
@@ -57,20 +56,36 @@ export default function New() {
 
                 <h2 className="text-3xl" id="hitract">Dalo på hitract</h2>
                 <h3 className="text-2xl">Allt du behöver samlat på ett ställe</h3>
-                <p>På <a style={{ color: "yellow" }} href="https://hitract.se">hitract</a> hittar du Dalos medlemskap, kommunikation, events & eventsbiljetter. Du kan dessutom connecta med andra studenter på MDU och andra skolor runt om i landet.</p>
+                <p>På <a  className=" dark:text-yellow-500 text-yellow-800" href="https://hitract.se">hitract</a> hittar du Dalos medlemskap, kommunikation, events & eventsbiljetter. Du kan dessutom connecta med andra studenter på MDU och andra skolor runt om i landet.</p>
                 <h3 className="text-2xl">På hitract kan du:</h3>
-                <div className="hitract-grid">
-                    <div><Image alt={''} loading='lazy' src="/hitract-bild-1.png" />Bli kompis med andra studenter</div>
-                    <div><Image alt={''} loading='lazy' src="/hitract-bild-2.png" />Bli medlem i föreningar på campus</div>
-                    <div><Image alt={''} loading='lazy' src="/hitract-bild-3.png" />Hitta kommande events på campus</div>
-                    <div><Image alt={''} loading='lazy' src="/hitract-bild-4.png" />Köpa biljetter till events</div>
-                    <div><Image alt={''} loading='lazy' src="/hitract-bild-5.png" />Connecta med studenter från hela Sverige</div>
-                    <div><Image alt={''} loading='lazy' src="/hitract-bild-6.png" />Visa vem du är</div>
-                    <div><Image alt={''} loading='lazy' src="/hitract-bild-7.png" />Bli hittad av drömarbetsgivaren</div>
-                    <div><Image alt={''} loading='lazy' src="/hitract-bild-8.png" />Se & hitta dina kurser</div>
+                <div className="grid grid-cols-2">
+                    <div className='relative w-full aspect-square'>
+                        <Image className='h-full w-full    aspect-square' alt={''} loading='lazy' src="/hitract-bild-1.png" width={512} height={512} />
+                        <div className='z-10 absolute flex justify-center items-center bg-black/50 h-full w-full top-0'><h2 className='text-center text-white font-medium p-2 text-2xl'>Bli kompis med andra studenter</h2></div></div>
+                    <div className='relative w-full aspect-square'>
+                        <Image className='h-full w-full    aspect-square' alt={''} loading='lazy' src="/hitract-bild-2.png" width={512} height={512} />
+                        <div className='z-10 absolute flex justify-center items-center bg-black/50 h-full w-full top-0'><h2 className='text-center text-white font-medium p-2 text-2xl'>Bli medlem i föreningar på campus</h2></div></div>
+                    <div className='relative w-full aspect-square'>
+                        <Image className='h-full w-full    aspect-square' alt={''} loading='lazy' src="/hitract-bild-3.png" width={512} height={512} />
+                        <div className='z-10 absolute flex justify-center items-center bg-black/50 h-full w-full top-0'><h2 className='text-center text-white font-medium p-2 text-2xl'>Hitta kommande events på campus</h2></div></div>
+                    <div className='relative w-full aspect-square'>
+                        <Image className='h-full w-full    aspect-square' alt={''} loading='lazy' src="/hitract-bild-4.png" width={512} height={512} />
+                        <div className='z-10 absolute flex justify-center items-center bg-black/50 h-full w-full top-0'><h2 className='text-center text-white font-medium p-2 text-2xl'>Köpa biljetter till events</h2></div></div>
+                    <div className='relative w-full aspect-square'>
+                        <Image className='h-full w-full    aspect-square' alt={''} loading='lazy' src="/hitract-bild-5.png" width={512} height={512} />
+                        <div className='z-10 absolute flex justify-center items-center bg-black/50 h-full w-full top-0'><h2 className='text-center text-white font-medium p-2 text-2xl'>Connecta med studenter från hela Sverige</h2></div></div>
+                    <div className='relative w-full aspect-square'>
+                        <Image className='h-full w-full    aspect-square' alt={''} loading='lazy' src="/hitract-bild-6.png" width={512} height={512} />
+                        <div className='z-10 absolute flex justify-center items-center bg-black/50 h-full w-full top-0'><h2 className='text-center text-white font-medium p-2 text-2xl'>Visa vem du är</h2></div></div>
+                    <div className='relative w-full aspect-square'>
+                        <Image className='h-full w-full    aspect-square' alt={''} loading='lazy' src="/hitract-bild-7.png" width={512} height={512} />
+                        <div className='z-10 absolute flex justify-center items-center bg-black/50 h-full w-full top-0'><h2 className='text-center text-white font-medium p-2 text-2xl'>Bli hittad av drömarbetsgivaren</h2></div></div>
+                    <div className='relative w-full aspect-square'>
+                        <Image className='h-full w-full    aspect-square' alt={''} loading='lazy' src="/hitract-bild-8.png" width={512} height={512} />
+                        <div className='z-10 absolute flex justify-center items-center bg-black/50 h-full w-full top-0'><h2 className='text-center text-white font-medium p-2 text-2xl'>Se & hitta dina kurser</h2></div></div>
                 </div>
 
-                <Image alt={''} loading='lazy' src="/hitract-studenter.png" />
+                <Image alt={''} loading='lazy' src="/hitract-studenter.png" height={550} width={820} />
                 <h4>
                     <strong>
                         Allt du behöver under din studietid!
@@ -80,7 +95,7 @@ export default function New() {
                     <li>Hitta och connecta med studenter från MDU och från andra skolor</li>
                     <li>Hitta kursare på campus och se alla dina nuvarande och kommande kurser</li>
                 </ul>
-                <Image alt={''} loading='lazy' src="/hitract-studentföreningar.png" />
+                <Image alt={''} loading='lazy' src="/hitract-studentföreningar.png" height={550} width={820} />
                 <h4>
                     <strong>
                         Hitta alla Dalos events och aktiviteter
@@ -91,7 +106,7 @@ export default function New() {
                     <li>Hitta andra studentföreningars events och köp biljetter i appen</li>
                     <li>Köp merch och andra produkter direkt på hitract!</li>
                 </ul>
-                <Image alt={''} loading='lazy' src="/hitract-arbetsgivare.png" />
+                <Image alt={''} loading='lazy' src="/hitract-arbetsgivare.png" height={550} width={820} />
                 <h4>
                     <strong>
                         Drömarbetsgivaren hittar dig
@@ -109,12 +124,12 @@ export default function New() {
                 <ol>
                     <li >
                         Ladda ner hitract appen och skapa ett konto
-                        <div className="appstore-links">
-                            <a href='https://apps.apple.com/se/app/hitract/id1494632863'><Image alt={''} loading='lazy' src="appstore.png" /></a>
-                            <a href='https://play.google.com/store/apps/details?id=se.hitract.hitract&hl=sv&gl=US&pli=1'><Image alt={''} loading='lazy' src="playstore.png" /></a>
+                        <div className="flex">
+                            <a href='https://apps.apple.com/se/app/hitract/id1494632863'><Image alt={''} loading='lazy' src="/appstore.png" height={150} width={500} /></a>
+                            <a href='https://play.google.com/store/apps/details?id=se.hitract.hitract&hl=sv&gl=US&pli=1'><Image alt={''} loading='lazy' src="/playstore.png" height={150} width={500} /></a>
                         </div>
                     </li>
-                    <li>Hitta vår hitClub genom att söka på &rdquo;Dalo&rdquo;, eller <a style={{ color: "yellow" }} href="https://hitract.se/hitclub/1075">klicka på den här länken</a></li>
+                    <li>Hitta vår hitClub genom att söka på &rdquo;Dalo&rdquo;, eller <a  className=" dark:text-yellow-500 text-yellow-800" href="https://hitract.se/hitclub/1075">klicka på den här länken</a></li>
                     <li>Bli medlem i Dalo</li>
                 </ol>
 
@@ -124,7 +139,7 @@ export default function New() {
                     </strong>
                 </h4>
 
-                <p>Kontakta hitract direkt via <a style={{ color: "yellow" }} href="mailto:info@hitract.se">info@hitract.se</a> eller <a style={{ color: "yellow" }} href="https://www.instagram.com/hitract/">@hitract</a> på Instagram.</p>
+                <p>Kontakta hitract direkt via <a  className=" dark:text-yellow-500 text-yellow-800" href="mailto:info@hitract.se">info@hitract.se</a> eller <a  className=" dark:text-yellow-500 text-yellow-800" href="https://www.instagram.com/hitract/">@hitract</a> på Instagram.</p>
             </div>
         </main>)
 }
