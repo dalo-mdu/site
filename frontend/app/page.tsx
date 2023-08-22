@@ -85,6 +85,9 @@ export default async function Home() {
               return <EventPreview key={index} event={event} />
             })
           }
+          <Link className='text-xl font-medium hover:text-yellow-500 transition-all duration-200 mt-4' href={"/event"}>
+            Visa alla kommande evenemang
+          </Link>
         </div>
       </div>
     </div>
