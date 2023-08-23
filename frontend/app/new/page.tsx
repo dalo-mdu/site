@@ -12,8 +12,8 @@ export default function New() {
                 </p>
 
                 <h2 className="text-3xl">Information</h2>
-                <p>Dalo är studentföreningen som tar hand om rookieperioden för de tre datainriktade programmen på skolan och drivs helt ideellt av studenter från de tre programmen.</p>
-                <p>Som ny på högskolan och på rookieperioden blir det svårt att hålla koll på allt som händer.
+                <p>Dalo är studentföreningen som tar hand om rookieperioden för de tre datainriktade programmen på universitetet och drivs helt ideellt av studenter från de tre programmen.</p>
+                <p>Som ny på universitetet och på rookieperioden blir det svårt att hålla koll på allt som händer.
                     Rookiecrew rekommenderar att du går med i grupperna som rekommenderades i välkomstbrevet och följer Dalo på sociala medier.</p>
                 <p>Vi organiserar saker främst med hjälp av <a  className=" dark:text-yellow-500 text-yellow-800" href="https://hitract.se">hitract</a>. Där går det att hitta vårt medlemskap, kommunikation och events som pågår under rookieperioden. Vår hitClub går att hitta <a  className=" dark:text-yellow-500 text-yellow-800" href="https://hitract.se/hitclub/1075">här</a>. <strong>Där kan ni bli en rookie-medlem i en DALO Rookie-club som vi kommer använda för att organisera rookieperioden</strong>. Mer information om vad hitract är och hur det fungerar finns <a href="#hitract" className='dark:text-yellow-500 text-yellow-800' >här</a>.</p>
 
