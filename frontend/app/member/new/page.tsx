@@ -4,6 +4,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import Personnummer from 'personnummer'
 import { Fragment, useState } from 'react'
+import Image from 'next/image'
 
 export default function Songbook() {
 
@@ -48,10 +49,38 @@ export default function Songbook() {
                 Bli medlem
             </h1>
             <div className="flex flex-col gap-5 text-lg ">
+                <h2>Rookieperioden</h2>
                 <p>
-                    Just nu håller vi på att byta medlemssystem, så vi kan inte ta emot nya medlemmar. Vi hoppas att det ska vara klart snart!
+                    Under rookieperioden går det att bli en Rookie-medlem i vår <a href="https://hitract.se/hitclub/1096">DALO Rookie-hitClub</a> på <a href="https://hitract.se">hitract</a>.
+                    Där finns information om events som anordnas under rookieperioden. Att bli Rookie-medlem kostar ingenting och är bara till för att vi ska kunna nå ut med information till er.
                 </p>
-
+                <h2>Dalo</h2>
+                <p>
+                    Som medlem i Dalo har du möjlighet att vara med på sittningar och events som anordnas av Dalo under resten av studenttiden. Du har dessutom rätt att påverka verksamheten genom direkt engagemang samt röstning under årsmötet.
+                </p>
+                <p>
+                    Medlemskapet har en medlemsavgift på 100kr och gäller livet ut.
+                </p>
+                
+                <Image alt={''} loading='lazy' src="/hitract-logga.png" height={550} width={820} />
+                <a href='https://apps.apple.com/se/app/hitract/id1494632863'><Image alt={''} loading='lazy' src="/appstore.png" height={150} width={500} /></a>
+                <a href='https://play.google.com/store/apps/details?id=se.hitract.hitract&hl=sv&gl=US&pli=1'><Image alt={''} loading='lazy' src="/playstore.png" height={150} width={500} /></a>
+                
+                <h2>Hur blir jag medlem?</h2>
+                <ol>
+                    <li>
+                        Ladda ner hitract-appen och skapa ett konto
+                    </li>
+                    <li>
+                        Hitta vår hitClub genom att söka på &rdquo;Dalo&rdquo;, eller besök <a href="https://hitract.se/hitclub/1075">den här länken</a> via webbläsaren på mobilen.
+                    </li>
+                    <li>
+                        Tryck på &rdquo;Bli medlem&rdquo; och följ instruktionerna.
+                    </li>
+                    <li>
+                        Klart! Du är nu medlem!
+                    </li>
+                </ol>
             </div>
         </main>)
     
