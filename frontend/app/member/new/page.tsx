@@ -62,9 +62,11 @@ export default function Songbook() {
                     Medlemskapet har en medlemsavgift på 100kr och gäller livet ut.
                 </p>
                 
-                <Image alt={''} loading='lazy' src="/hitract-logga.png" height={550} width={820} />
-                <a href='https://apps.apple.com/se/app/hitract/id1494632863'><Image alt={''} loading='lazy' src="/appstore.png" height={150} width={500} /></a>
-                <a href='https://play.google.com/store/apps/details?id=se.hitract.hitract&hl=sv&gl=US&pli=1'><Image alt={''} loading='lazy' src="/playstore.png" height={150} width={500} /></a>
+                <Image alt={''} loading='lazy' src="/hitract-logga.png" height={180} width={180} />
+                <div className="flex">
+                    <a href='https://apps.apple.com/se/app/hitract/id1494632863'><Image alt={''} loading='lazy' src="/appstore.png" height={150} width={500} /></a>
+                    <a href='https://play.google.com/store/apps/details?id=se.hitract.hitract&hl=sv&gl=US&pli=1'><Image alt={''} loading='lazy' src="/playstore.png" height={150} width={500} /></a>
+                </div>
                 
                 <h2 className="text-4xl">Hur blir jag medlem?</h2>
                 <ol className="list-decimal">
