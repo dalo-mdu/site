@@ -49,12 +49,12 @@ export default function Songbook() {
                 Bli medlem
             </h1>
             <div className="flex flex-col gap-5 text-lg ">
-                <h2>Rookieperioden</h2>
+                <h2 className="text-4xl">Rookieperioden</h2>
                 <p>
                     Under rookieperioden går det att bli en Rookie-medlem i vår <a href="https://hitract.se/hitclub/1096">DALO Rookie-hitClub</a> på <a href="https://hitract.se">hitract</a>.
                     Där finns information om events som anordnas under rookieperioden. Att bli Rookie-medlem kostar ingenting och är bara till för att vi ska kunna nå ut med information till er.
                 </p>
-                <h2>Dalo</h2>
+                <h2 className="text-4xl">Dalo</h2>
                 <p>
                     Som medlem i Dalo har du möjlighet att vara med på sittningar och events som anordnas av Dalo under resten av studenttiden. Du har dessutom rätt att påverka verksamheten genom direkt engagemang samt röstning under årsmötet.
                 </p>
@@ -66,7 +66,7 @@ export default function Songbook() {
                 <a href='https://apps.apple.com/se/app/hitract/id1494632863'><Image alt={''} loading='lazy' src="/appstore.png" height={150} width={500} /></a>
                 <a href='https://play.google.com/store/apps/details?id=se.hitract.hitract&hl=sv&gl=US&pli=1'><Image alt={''} loading='lazy' src="/playstore.png" height={150} width={500} /></a>
                 
-                <h2>Hur blir jag medlem?</h2>
+                <h2 className="text-4xl">Hur blir jag medlem?</h2>
                 <ol>
                     <li>
                         Ladda ner hitract-appen och skapa ett konto
