@@ -51,7 +51,7 @@ export default function Songbook() {
             <div className="flex flex-col gap-5 text-lg ">
                 <h2 className="text-4xl">Rookieperioden</h2>
                 <p>
-                    Under rookieperioden går det att bli en Rookie-medlem i vår <a href="https://hitract.se/hitclub/1096">DALO Rookie-hitClub</a> på <a href="https://hitract.se">hitract</a>.
+                    Under rookieperioden går det att bli en Rookie-medlem i vår <a className="dark:text-yellow-500 text-yellow-800" href="https://hitract.se/hitclub/1096">DALO Rookie-hitClub</a> på <a className="dark:text-yellow-500 text-yellow-800" href="https://hitract.se">hitract</a>.
                     Där finns information om events som anordnas under rookieperioden. Att bli Rookie-medlem kostar ingenting och är bara till för att vi ska kunna nå ut med information till er.
                 </p>
                 <h2 className="text-4xl">Dalo</h2>
@@ -64,8 +64,8 @@ export default function Songbook() {
                 
                 <Image alt={''} loading='lazy' src="/hitract-logga.png" height={180} width={180} />
                 <div className="flex">
-                    <a href='https://apps.apple.com/se/app/hitract/id1494632863'><Image alt={''} loading='lazy' src="/appstore.png" height={150} width={500} /></a>
-                    <a href='https://play.google.com/store/apps/details?id=se.hitract.hitract&hl=sv&gl=US&pli=1'><Image alt={''} loading='lazy' src="/playstore.png" height={150} width={500} /></a>
+                    <a className="dark:text-yellow-500 text-yellow-800" href='https://apps.apple.com/se/app/hitract/id1494632863'><Image alt={''} loading='lazy' src="/appstore.png" height={150} width={500} /></a>
+                    <a className="dark:text-yellow-500 text-yellow-800" href='https://play.google.com/store/apps/details?id=se.hitract.hitract&hl=sv&gl=US&pli=1'><Image alt={''} loading='lazy' src="/playstore.png" height={150} width={500} /></a>
                 </div>
                 
                 <h2 className="text-4xl">Hur blir jag medlem?</h2>
@@ -74,7 +74,7 @@ export default function Songbook() {
                         Ladda ner hitract-appen och skapa ett konto
                     </li>
                     <li>
-                        Hitta vår hitClub genom att söka på &rdquo;Dalo&rdquo;, eller besök <a href="https://hitract.se/hitclub/1075">den här länken</a> via webbläsaren på mobilen.
+                        Hitta vår hitClub genom att söka på &rdquo;Dalo&rdquo;, eller besök <a className="dark:text-yellow-500 text-yellow-800" href="https://hitract.se/hitclub/1075">den här länken</a> via webbläsaren på mobilen.
                     </li>
                     <li>
                         Tryck på &rdquo;Bli medlem&rdquo; och följ instruktionerna.
