@@ -16,6 +16,7 @@ export interface IEventInfo {
     endDate?: string
     cost?: number   
     tz?: string;
+    id: string;
 }
 
 export interface IEventAttributes {

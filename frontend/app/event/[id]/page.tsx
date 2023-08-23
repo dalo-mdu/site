@@ -8,7 +8,7 @@ export default async function Event({ params }: { params: { id: string } }) {
     // get event from id
     const { data } = await client.query({ query: LIST_EVENT })
     const events: IEventAttributes[] = data.events.data;
-    const event = events.find(event => event.attributes.info.name === decodeURI(params.id))
+    const event = events.find(event => event.attributes.info.id === decodeURI(params.id))
 
 
     return (
