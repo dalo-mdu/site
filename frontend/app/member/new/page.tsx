@@ -67,7 +67,7 @@ export default function Songbook() {
                 <a href='https://play.google.com/store/apps/details?id=se.hitract.hitract&hl=sv&gl=US&pli=1'><Image alt={''} loading='lazy' src="/playstore.png" height={150} width={500} /></a>
                 
                 <h2 className="text-4xl">Hur blir jag medlem?</h2>
-                <ol>
+                <ol className="list-decimal">
                     <li>
                         Ladda ner hitract-appen och skapa ett konto
                     </li>
