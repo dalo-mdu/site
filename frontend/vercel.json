@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/uploads/:path*",
-      "destination": "https://dalo.axeldraws.com/uploads/:path*"
+      "destination": "https://cms.dalo.se/uploads/:path*"
     }
   ]
 }
